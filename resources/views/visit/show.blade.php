@@ -542,7 +542,7 @@
                     @php 
                     $date = date('Y-m-d');
                     $cout_date = DateDiff($list->visit_exam,$date);
-                    $disc = date ('Y-m-d', strtotime('+14 day', strtotime($list->visit_exam))); 
+                    $disc = date ('Y-m-d', strtotime('+10 day', strtotime($list->visit_exam))); 
                     @endphp
                     <table class="table text-center">
                         <thead>

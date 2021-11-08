@@ -44,7 +44,7 @@
                                         <th><i class="fa fa-user"></i> ผู้ป่วย</th>
                                         <th class="text-center"><i class="far fa-calendar"></i> วันที่รักษา</th>
                                         <th class="text-center"><i class="fa fa-user-md"></i>  แพทย์</th>
-                                        <th class="text-center">สถานะ</th>
+                                        <th width="1%" class="text-center">สถานะ</th>
                                         <th class="text-center">รายละเอียด</th>
                                     </tr>
                                 </thead>
@@ -63,7 +63,7 @@
                                             <td class="text-center">{{ DateThai($lists->visit_admit) }}</td>
                                             <td class="text-center">{{ $lists->name }}</td>
                                             <td class="text-center">
-                                                <span class="badge badge-{{ $lists->vst_color }}"><i class="fa fa-{{ $lists->vst_icon }}"></i> {{ $lists->vst_name }}</span>
+                                                <span class="badge badge-{{ $lists->vst_color }} btn-block"><i class="fa fa-{{ $lists->vst_icon }}"></i> {{ $lists->vst_name }}</span>
                                             </td>
                                             <td class="text-center">
                                                 <a href="{{ route('visit.show',$lists->visit_id) }}" class="btn btn-sm btn-secondary">

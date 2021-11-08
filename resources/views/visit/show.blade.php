@@ -551,7 +551,7 @@
                                 <th>HN</th>
                                 <th>ผู้ป่วย</th>
                                 <th>วันที่ตรวจ</th>
-                                <th>วันที่ครบกำหนด {{ $cout_date }}</th>
+                                <th>วันที่ครบกำหนด</th>
                                 <th>สถานะ</th>
                             </tr>
                         </thead>
@@ -563,7 +563,7 @@
                                 <td>{{ DateThai($list->visit_exam) }}</td>
                                 <td>{{ DateThai($disc) }}</td>
                                 <td>
-                                    @if ($cout_date <= 14)
+                                    @if ($cout_date <= 10)
                                     <span class="badge badge-danger"><i class="fa fa-times-circle"></i> ยังไม่ครบกำหนด</span>
                                     @php $dc = 'disabled' @endphp
                                     @else

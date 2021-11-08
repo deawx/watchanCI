@@ -260,7 +260,7 @@ class visitController extends Controller
         $list = DB::table('visits')
                 ->where('visits.visit_id', $id)
                 ->first();
-        // Token Line 
+        // Token Line
         $Token = "";
         $message = "มีรายการ ExtraOrder\nหมายเลข HN: ".$list->visit_hn."\nหมายเลข AN: ".$list->visit_an."\nผู้ป่วย : ".$list->visit_patient."\nตรวจสอบได้ที่ https://ci.wc-hospital.go.th";
         line_notify($Token, $message);
